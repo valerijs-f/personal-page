@@ -4,3 +4,17 @@
     --color-primary:    #020420; /* bg-primary, text-primary */
     --color-accent:     #00DC42; /* bg-accent, text-accent */
 }
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold mb-4;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold mb-3;
+  }
+
+  h2 {
+    @apply text-xl font-medium mb-2;
+  }
+}

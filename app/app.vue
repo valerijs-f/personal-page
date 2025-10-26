@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white dark:bg-primary dark:text-white h-svh">
-    <header class="h-1/10 flex justify-between">
+    <header class="h-1/10 bg-white dark:bg-primary flex justify-between sticky top-0">
       This is header
       <div>
         page sections
@@ -32,8 +32,16 @@
       </div>
       <div class="p-3">
         <h2>Projects</h2>
-        <div class="border-1 border-accent rounded-sm p-2">
+        <div class="border-1 border-accent rounded-sm p-2 mb-1">
           <h3>Personal page</h3>
+          <p>this very page</p>
+        </div>
+        <div class="border-1 border-accent rounded-sm p-2">
+          <h3>Some other project</h3>
+          <p>this very page</p>
+        </div>
+        <div class="border-1 border-accent rounded-sm p-2 mb-1">
+          <h3>Some other project</h3>
           <p>this very page</p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex" :class="extraClasses">
+  <div class="flex">
     <tag
       v-for="tag in tags"
       :text="tag"

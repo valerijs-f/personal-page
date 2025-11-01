@@ -1,20 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary:    #020420; /* bg-primary, text-primary */
-    --color-accent:     #00DC42; /* bg-accent, text-accent */
+    --color-primary: #020420;
+    --color-accent: #00DC42;
+    --color-elevated: #1d293d;
+    --color-muted: #90a1b8;
 }
 
 @layer base {
+  body {
+    @apply bg-white dark:bg-primary dark:text-muted ;
+  }
+
   h1 {
-    @apply text-3xl font-bold mb-4;
+    @apply text-3xl font-bold mb-4 dark:text-white;
   }
 
   h2 {
-    @apply text-2xl font-semibold mb-3;
+    @apply text-2xl font-semibold mb-3 dark:text-white;
   }
 
   h3 {
-    @apply text-xl font-medium mb-2;
+    @apply text-xl font-medium mb-2 dark:text-white;
   }
 }

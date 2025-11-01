@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex flex-wrap gap-2">
     <tag
       v-for="tag in tags"
       :text="tag"

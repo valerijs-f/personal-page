@@ -1,14 +1,5 @@
 <template>
   <div>
-    <header class="h-1/10 flex justify-between bg-white dark:bg-primary sticky top-0">
-      This is header
-      <div>
-        page sections
-      </div>
-      <div>
-        theme selector
-      </div>
-    </header>
     <main class="px-8 flex justify-center">
       <div class="lg:w-4/5">
         <div class="text-center">
@@ -68,9 +59,6 @@
         </div>
       </div>
     </main>
-    <footer>
-      This is footer
-    </footer>
   </div>
 </template>
 

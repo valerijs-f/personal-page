@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-header/>
-    <slot />
+      <slot />
     <v-footer/>
   </div>
 </template>

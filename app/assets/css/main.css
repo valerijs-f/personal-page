@@ -24,4 +24,8 @@
   h3 {
     @apply text-xl font-medium mb-2 dark:text-white;
   }
+
+  .link {
+    @apply hover:text-accent dark:hover:text-accent/70;
+  }
 }

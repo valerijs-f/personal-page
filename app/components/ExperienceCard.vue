@@ -1,12 +1,12 @@
 <template>
-    <div class="flex flex-col lg:flex-row gap-4 rounded-sm p-4 lg:w-2/3 bg-light-elevated dark:bg-elevated hover:scale-105 hover:bg-light-elevated/90 dark:hover:bg-elevated/90 transition-transform">
+    <div class="flex flex-col lg:flex-row gap-4 rounded-sm p-4 bg-light-elevated dark:bg-elevated hover:scale-105 hover:bg-light-elevated/90 dark:hover:bg-elevated/90 transition-transform">
         <div v-if="experience.period" class="flex-basis-1/5">
             {{ experience.period }}
         </div>
         <div>
             <h3>{{ experience.role }} 
                 <span v-if="experience.company">· 
-                    <a v-if="experience.companyUrl" class="hover:text-accent/70" :href="experience.companyUrl">{{experience.company}}</a>
+                    <a v-if="experience.companyUrl" class="link" :href="experience.companyUrl">{{experience.company}}</a>
                     <span v-else>{{experience.company}}</span>
                 </span> 
             </h3>

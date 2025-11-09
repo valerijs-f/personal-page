@@ -9,37 +9,62 @@
         theme selector
       </div>
     </header>
-    <main class="px-8">
-      <h1> Hi, Val's page here </h1>
-      <div class="mb-4">
-        <h2>Bio</h2>
-        <div class="border-1 border-accent rounded-sm p-2">
-          <p>Here is my bio</p>
+    <main class="px-8 flex justify-center">
+      <div class="lg:w-4/5">
+        <div class="text-center">
+          <h1 class="mb-2">Valerijs Farbtuhs</h1>
+          <p class="text-xl dark:text-white mb-1">Medior Full Stack developer</p>
+          <p class="text-lg">I build responsive, scalable and accessible applications.</p>
         </div>
-      </div>
-      <div class="mb-4">
-        <h2>Experience</h2>
-        <div class="flex flex-col gap-4">
-          <experience-card
-            v-for="(exp, i) in experiences"
-            :key="i"
-            :experience="exp"
-          />
-        </div> 
-      </div>
-      <div class="">
-        <h2>Projects</h2>
-        <div class="border-1 border-accent rounded-sm p-2 mb-1">
-          <h3>Personal page</h3>
-          <p>this very page</p>
+        <div class="mb-4">
+          <h2>About me</h2>
+          <div class="">
+            <p class="mb-1">
+              I discovered my passion for creating things through code when I took Harvard's CS50 course
+              — a general introduction to computer science where I built my very first web app as
+              a final project. That moment of turning an idea into something real, something interactive,
+              instantly hooked me. Since then, I've been fascinated by how web development blends logic 
+              and creativity to shape experiences that people actually use.
+            </p>
+            <p class="mb-1">
+              During my university years, I dove deeper into programming, constantly learning and
+              experimenting to bring my ideas to life. After graduating, I was lucky to turn this passion
+              into a career, applying my skills across diverse projects and domains — from 
+              <a class="font-bold link" href="https://www.thuisbezorgd.nl/en/courier" target="_blank">recruitment</a> 
+              and <a class="font-bold link" href="https://zorgselect.nl/" target="_blank">healtcare</a> to 
+              <a class="font-bold link" href="https://vrm.victronenergy.com/" target="_blank">energy management</a>
+              — each one teaching me something new about people, technology, and impact.
+            </p>
+            <p class="mb-1">
+              Outside of work, I enjoy staying active through sports, particularly beach volleyball, going to 
+              the gym, and occasionally playing racket sports.
+            </p>
+          </div>
         </div>
-        <div class="border-1 border-accent rounded-sm p-2">
-          <h3>Some other project</h3>
-          <p>this very page</p>
+        <div class="mb-4">
+          <h2>Experience</h2>
+          <div class="flex flex-col gap-4">
+            <experience-card
+              v-for="(exp, i) in experiences"
+              :key="i"
+              :experience="exp"
+            />
+          </div> 
         </div>
-        <div class="border-1 border-accent rounded-sm p-2 mb-1">
-          <h3>Some other project</h3>
-          <p>this very page</p>
+        <div class="">
+          <h2>Projects</h2>
+          <div class="border-1 border-accent rounded-sm p-2 mb-1">
+            <h3>Personal page</h3>
+            <p>this very page</p>
+          </div>
+          <div class="border-1 border-accent rounded-sm p-2">
+            <h3>Some other project</h3>
+            <p>this very page</p>
+          </div>
+          <div class="border-1 border-accent rounded-sm p-2 mb-1">
+            <h3>Some other project</h3>
+            <p>this very page</p>
+          </div>
         </div>
       </div>
     </main>

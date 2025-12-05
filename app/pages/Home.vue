@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="px-8 flex justify-center">
+    <main class="px-8 py-2 flex justify-center">
       <div class="lg:w-4/5">
         <div class="text-center">
           <h1 class="mb-2">Valerijs Farbtuhs</h1>

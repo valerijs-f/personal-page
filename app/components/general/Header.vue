@@ -15,7 +15,10 @@
             </a>
         </div>
         <div class="flex flex-row flex-1 justify-end items-center">
-            <button @click="toggleTheme">🌓 {{ colorModeValue === 'dark' ? 'Dark' : 'Light' }}</button>
+            <button class="p-1 rounded-sm cursor-pointer hover:bg-light-elevated dark:hover:bg-elevated" @click="toggleTheme">
+                <MoonIcon v-if="isDarkTheme" class="text-white" />
+                <SunIcon v-if="isLightTheme" class="text-black"/>
+            </button>
         </div>
     </header>
 </template>
@@ -25,6 +28,8 @@ import EnvelopeIcon from '../icons/EnvelopeIcon.vue';
 import GithubIcon from '../icons/GithubIcon.vue';
 import LinkedinIcon from '../icons/LinkedinIcon.vue';
 import LogoIcon from '../icons/LogoIcon.vue';
+import MoonIcon from '../icons/MoonIcon.vue';
+import SunIcon from '../icons/SunIcon.vue';
 export default {
     name: 'Header',
     components: {
@@ -32,25 +37,29 @@ export default {
         LinkedinIcon,
         EnvelopeIcon,
         LogoIcon,
+        MoonIcon,
+        SunIcon,
     },
     data() {
         return {
-            colorMode: null,
+            colorMode: '',
         }
     },
     computed: {
-        colorModeValue() {
-            return this.colorMode?.value
+        isDarkTheme() {
+            return this.colorMode.value === 'dark';
         },
+        isLightTheme() {
+            return this.colorMode.value === 'light';
+        }
     },
     mounted() {
-        const colorMode = useColorMode()
-        this.colorMode = colorMode
+        const colorMode = useColorMode();
+        this.colorMode = colorMode;
     },
     methods: {
         toggleTheme() {
-            if (!this.colorMode) return
-            this.colorMode.preference = this.colorMode.value === 'dark' ? 'light' : 'dark'
+            this.colorMode.preference = this.isDarkTheme ? 'light' : 'dark';
         },
     },
     }

@@ -72,7 +72,7 @@ definePageMeta({
 
 const experiences = [
   {
-    period: "2024 - present",
+    period: "2023 - present",
     role: "Fullstack Developer",
     company: "El Niño",
     companyUrl: "https://elnino.tech/",

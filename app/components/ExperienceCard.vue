@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col lg:flex-row gap-4 rounded-sm p-4 bg-light-elevated dark:bg-elevated hover:scale-105 hover:bg-light-elevated/90 dark:hover:bg-elevated/90 transition-transform">
+    <div class="flex flex-col lg:flex-row gap-4 rounded-sm p-4 bg-light-elevated dark:bg-elevated lg:hover:scale-105 lg:hover:bg-light-elevated/90 lg:dark:hover:bg-elevated/90 transition-transform">
         <div v-if="experience.period" class="flex-basis-1/5">
             {{ experience.period }}
         </div>

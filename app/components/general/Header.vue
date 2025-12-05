@@ -1,5 +1,5 @@
 <template>
-    <header class="p-3 flex justify-between bg-white dark:bg-primary sticky top-0 shadow-[0_4px_10px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_10px_rgba(0,0,0,0.4)]">
+    <header class="p-3 flex justify-between bg-white dark:bg-primary sticky top-0 shadow-[0_4px_10px_theme(colors.accent/0.1)]">
         <a class="flex-1 flex flex-row items-center" href="/">
             <LogoIcon />
         </a>

@@ -36,26 +36,33 @@
           <h2>Experience</h2>
           <div class="flex flex-col gap-4">
             <experience-card
-              v-for="(exp, i) in experiences"
+              v-for="(experience, i) in experiences"
               :key="i"
-              :experience="exp"
-            />
+              :experience="experience"
+            >
+              <template v-slot:left-column>
+                <div class="flex-basis-1/5">
+                    {{ experience.period }}
+                </div>
+              </template>
+            </experience-card>
           </div> 
         </div>
-        <div class="">
+        <div>
           <h2>Projects</h2>
-          <div class="border-1 border-accent rounded-sm p-2 mb-1">
-            <h3>Personal page</h3>
-            <p>this very page</p>
-          </div>
-          <div class="border-1 border-accent rounded-sm p-2">
-            <h3>Some other project</h3>
-            <p>this very page</p>
-          </div>
-          <div class="border-1 border-accent rounded-sm p-2 mb-1">
-            <h3>Some other project</h3>
-            <p>this very page</p>
-          </div>
+          <div class="flex flex-col gap-4">
+            <experience-card
+              v-for="(project, i) in projects"
+              :key="i"
+              :experience="project"
+            >
+              <template v-slot:left-column>
+                <div class="flex-basis-1/5">
+                    <component :is="project.icon" />
+                </div>
+              </template>
+            </experience-card>
+          </div> 
         </div>
       </div>
     </main>
@@ -63,6 +70,7 @@
 </template>
 
 <script setup>
+import LogoMinimalIcon from "~/components/icons/LogoMinimalIcon.vue";
 import ExperienceCard from "../components/ExperienceCard.vue";
 
 definePageMeta({
@@ -76,7 +84,7 @@ const experiences = [
     role: "Fullstack Developer",
     company: "El Niño",
     companyUrl: "https://elnino.tech/",
-    location: "Enschede, Netherlands (Remote)",
+    location: "Enschede, Netherlands",
     skills: ["Vue", "React", "Angular", "Laravel", "PHP", "Python", "MySQL", "Tailwind", "Cypress", "Docker"],
     description:
       `I build and maintain responsive web applications using Vue,
@@ -96,6 +104,19 @@ const experiences = [
       `I supported students in developing strong programming and problem-solving skills through hands-on Java labs and personalized 
       guidance. I provided real-time debugging help, explained core object-oriented programming concepts, and gave
       detailed feedback on assignments to help students improve both their technical and analytical thinking.`
+  }
+]
+
+const projects = [
+  {
+    role: "Portfolio Site",
+    skills: ["Nuxt.js", "Vue", "Tailwind"],
+    icon: LogoMinimalIcon,
+    description: 
+      `This very portfolio site is my first publicly available project, built to showcase my skills, experience, 
+       and personal approach to development. I implemented it from scratch, focusing on clean UI, 
+       accessibility, responsive layout, and a smooth user experience. It serves as both a practical demonstration 
+       of my abilities and a foundation I plan to expand as I grow professionally.`
   }
 ]
 

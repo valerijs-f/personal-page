@@ -32,4 +32,18 @@ Locally preview production build:
 npm run preview
 ```
 
+## Code formatiing
+
+To check code formatting:
+
+```bash
+npm run format:check
+```
+
+To also fix code formatting:
+
+```bash
+npm run format
+```
+
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

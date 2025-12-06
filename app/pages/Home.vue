@@ -1,23 +1,23 @@
 <template>
   <div>
     <main class="px-8 py-2 flex justify-center">
-      <div class="lg:w-4/5">
+      <div class="lg:w-4/5 flex flex-col gap-4">
         <div class="text-center">
           <h1 class="mb-2">Valerijs Farbtuhs</h1>
           <p class="text-xl dark:text-white mb-1">Medior Full Stack developer</p>
           <p class="text-lg">I build responsive, scalable and accessible applications.</p>
         </div>
-        <div class="mb-4">
+        <div>
           <h2>About me</h2>
-          <div class="">
-            <p class="mb-1">
+          <div class="flex flex-col gap-1">
+            <p>
               I discovered my passion for creating things through code when I took Harvard's CS50 course
               — a general introduction to computer science where I built my very first web app as
               a final project. That moment of turning an idea into something real, something interactive,
               instantly hooked me. Since then, I've been fascinated by how web development blends logic 
               and creativity to shape experiences that people actually use.
             </p>
-            <p class="mb-1">
+            <p>
               During my university years, I dove deeper into programming, constantly learning and
               experimenting to bring my ideas to life. After graduating, I was lucky to turn this passion
               into a career, applying my skills across diverse projects and domains — from 
@@ -26,13 +26,13 @@
               <a class="font-bold link" href="https://vrm.victronenergy.com/" target="_blank">energy management</a>
               — each one teaching me something new about people, technology, and impact.
             </p>
-            <p class="mb-1">
+            <p>
               Outside of work, I enjoy staying active through sports, particularly beach volleyball, going to 
               the gym, and occasionally playing racket sports.
             </p>
           </div>
         </div>
-        <div class="mb-4">
+        <div>
           <h2>Experience</h2>
           <div class="flex flex-col gap-4">
             <experience-card

@@ -22,15 +22,15 @@
               experimenting to bring my ideas to life. After graduating, I was lucky to turn this
               passion into a career, applying my skills across diverse projects and domains — from
               <a
-                class="link font-bold"
+                class="link font-bold underline"
                 href="https://www.thuisbezorgd.nl/en/courier"
                 target="_blank"
                 >recruitment</a
               >
               and
-              <a class="link font-bold" href="https://zorgselect.nl/" target="_blank">healtcare</a>
+              <a class="link font-bold underline" href="https://zorgselect.nl/" target="_blank">healtcare</a>
               to
-              <a class="link font-bold" href="https://vrm.victronenergy.com/" target="_blank"
+              <a class="link font-bold underline" href="https://vrm.victronenergy.com/" target="_blank"
                 >energy management</a
               >
               — each one teaching me something new about people, technology, and impact.

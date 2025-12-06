@@ -6,7 +6,7 @@
     --color-primary: #020420;
     --color-accent: #00DC42;
     --color-elevated: #1d293d;
-    --color-light-elevated: #fcf9fa;
+    --color-light-elevated: #F2F2F2;
     --color-muted: #90a1b8;
 }
 
@@ -28,6 +28,6 @@
   }
 
   .link {
-    @apply hover:text-accent dark:hover:text-accent/70;
+    @apply hover:text-accent dark:hover:text-accent/50;
   }
 }

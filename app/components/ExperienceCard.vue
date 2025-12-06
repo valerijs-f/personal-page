@@ -12,6 +12,7 @@
             v-if="experience.companyUrl"
             class="link inline-flex items-center gap-1"
             :href="experience.companyUrl"
+            aria-label="Link to employer's site"
             >{{ experience.company }}
             <ArrowRightIcon
               class="-rotate-45 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -30,6 +31,7 @@
         v-if="experience.repository"
         :href="experience.repository.link"
         class="flew-row link flex gap-1"
+        aria-label="Repository link"
       >
         <LinkIcon /> {{ experience.repository.text ?? 'Repository' }}
       </a>

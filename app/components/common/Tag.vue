@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-accent/20 border-1 border-accent rounded-sm p-1 max-w-fit text-xs">
+  <div class="bg-accent/20 border-accent max-w-fit rounded-sm border-1 p-1 text-xs">
     {{ text }}
   </div>
 </template>
@@ -8,7 +8,7 @@
 defineProps({
   text: {
     type: String,
-    required: true
+    required: true,
   },
 })
 </script>

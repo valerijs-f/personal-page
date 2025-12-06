@@ -1,33 +1,32 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-primary: #020420;
-    --color-accent: #00DC42;
-    --color-elevated: #1d293d;
-    --color-light-elevated: #F2F2F2;
-    --color-muted: #90a1b8;
+  --color-primary: #020420;
+  --color-accent: #00dc42;
+  --color-elevated: #1d293d;
+  --color-light-elevated: #f2f2f2;
+  --color-muted: #90a1b8;
 
   --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
-
 }
 
 @layer base {
   body {
-    @apply bg-white dark:bg-primary dark:text-muted ;
+    @apply dark:bg-primary dark:text-muted bg-white;
   }
 
   h1 {
-    @apply text-3xl font-bold mb-4 dark:text-white;
+    @apply mb-4 text-3xl font-bold dark:text-white;
   }
 
   h2 {
-    @apply text-2xl font-semibold mb-3 dark:text-white;
+    @apply mb-3 text-2xl font-semibold dark:text-white;
   }
 
   h3 {
-    @apply text-xl font-medium mb-2 dark:text-white;
+    @apply mb-2 text-xl font-medium dark:text-white;
   }
 
   .link {

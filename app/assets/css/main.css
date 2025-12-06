@@ -8,6 +8,9 @@
     --color-elevated: #1d293d;
     --color-light-elevated: #F2F2F2;
     --color-muted: #90a1b8;
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+
 }
 
 @layer base {

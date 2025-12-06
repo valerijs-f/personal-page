@@ -28,6 +28,6 @@
   }
 
   .link {
-    @apply hover:text-accent dark:hover:text-accent/50;
+    @apply hover:text-accent dark:hover:text-accent/50 group-hover:text-accent dark:group-hover:text-accent/50;
   }
 }

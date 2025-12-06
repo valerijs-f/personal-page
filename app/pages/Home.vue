@@ -112,6 +112,9 @@ const projects = [
     role: "Portfolio Site",
     skills: ["Nuxt.js", "Vue", "Tailwind"],
     icon: LogoMinimalIcon,
+    repository: {
+      link: "https://github.com/valerijs-f/personal-page"
+    },
     description: 
       `This very portfolio site is my first publicly available project, built to showcase my skills, experience, 
        and personal approach to development. I implemented it from scratch, focusing on clean UI, 

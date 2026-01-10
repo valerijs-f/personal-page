@@ -63,7 +63,19 @@
             <experience-card v-for="(project, i) in projects" :key="i" :experience="project">
               <template v-slot:left-column>
                 <div class="flex-basis-1/5">
-                  <component :is="project.icon" />
+                  <div class="w-8 h-8 flex items-center justify-center">
+                    <component
+                      v-if="project.icon"
+                      :is="project.icon"
+                      class="w-8 h-8"
+                    />
+                    <img
+                      v-else-if="project.image"
+                      :src="project.image"
+                      :alt="`${project.role} logo`"
+                      class="w-8 h-8 rounded-sm"
+                    />
+                  </div>
                 </div>
               </template>
             </experience-card>
@@ -77,6 +89,7 @@
 <script setup>
 import LogoMinimalIcon from '~/components/icons/LogoMinimalIcon.vue'
 import ExperienceCard from '../components/ExperienceCard.vue'
+import TrackerImage from '~/assets/img/tracker-logo.png'
 
 definePageMeta({
   layout: 'default',
@@ -133,6 +146,19 @@ const projects = [
        and personal approach to development. I implemented it from scratch, focusing on clean UI, 
        accessibility, responsive layout, and a smooth user experience. It serves as both a practical demonstration 
        of my abilities and a foundation I plan to expand as I grow professionally.`,
+  },
+  {
+    role: 'Telegram Expense Tracker',
+    company: 'Telegram Bot',
+    companyUrl: 'https://t.me/valcodes_expense_tracker_bot',
+    skills: ['Nuxt.js', 'TypeScript', 'Telegram Mini App', 'Google Sheets API', 'Service Accounts'],
+    image: TrackerImage,
+    repository: {
+      link: 'https://github.com/valerijs-f/expense-tracker',
+    },
+    description: `A personal Telegram Mini App created to simplify everyday expense tracking for me and my girlfriend. 
+      It replaces a manual Google Sheets workflow we had been using for years, making it faster and easier to log expenses in daily life. 
+      The project is built around convenience and consistency, turning a repetitive task into a lightweight, habit-friendly process.`,
   },
 ]
 </script>

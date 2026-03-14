@@ -10,7 +10,7 @@
         class="hover:bg-bg-elevated rounded-sm p-1"
         href="https://github.com/valerijs-f"
         target="_blank"
-        aria-label="GitHub profile"
+        :aria-label="text.header.ariaGitHub"
       >
         <GithubIcon />
       </a>
@@ -18,7 +18,7 @@
         class="hover:bg-bg-elevated rounded-sm p-1"
         href="https://linkedin.com/in/valerijs-farbtuhs"
         target="_blank"
-        aria-label="LinkedIn profile"
+        :aria-label="text.header.ariaLinkedIn"
       >
         <LinkedinIcon />
       </a>
@@ -26,7 +26,7 @@
         class="hover:bg-bg-elevated rounded-sm p-1"
         href="mailto:val.codes.info+portfolio@gmail.com?subject=Portfolio%20Contact%20Request&body=Hi%20Valerijs%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ARegards%2C%0A"
         target="_blank"
-        aria-label="Contact via email"
+        :aria-label="text.header.ariaEmail"
       >
         <EnvelopeIcon />
       </a>
@@ -35,7 +35,7 @@
       <button
         class="hover:bg-bg-elevated cursor-pointer rounded-sm p-1"
         @click="toggleTheme"
-        aria-label="Toggle theme"
+        :aria-label="text.header.ariaToggleTheme"
       >
         <MoonIcon v-if="isDarkTheme" class="text-white" />
         <SunIcon v-if="isLightTheme" class="text-black" />
@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import { text } from '~/content/text'
 import EnvelopeIcon from '../icons/EnvelopeIcon.vue'
 import GithubIcon from '../icons/GithubIcon.vue'
 import LinkedinIcon from '../icons/LinkedinIcon.vue'
@@ -64,6 +65,7 @@ export default {
   data() {
     return {
       colorMode: '',
+      text,
     }
   },
   computed: {

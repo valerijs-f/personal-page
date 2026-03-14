@@ -12,7 +12,7 @@
             v-if="experience.companyUrl"
             class="link inline-flex items-center gap-1"
             :href="experience.companyUrl"
-            aria-label="Link to employer's site"
+            :aria-label="text.experienceCard.ariaEmployerLink"
             >{{ experience.company }}
             <ArrowRightIcon
               class="-rotate-45 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -31,9 +31,9 @@
         v-if="experience.repository"
         :href="experience.repository.link"
         class="flew-row link flex gap-1"
-        aria-label="Repository link"
+        :aria-label="text.experienceCard.ariaRepositoryLink"
       >
-        <LinkIcon /> {{ experience.repository.text ?? 'Repository' }}
+        <LinkIcon /> {{ experience.repository.text ?? text.experienceCard.repositoryDefault }}
       </a>
       <tag-list v-if="experience.skills?.length" :tags="experience.skills" />
     </div>
@@ -41,6 +41,7 @@
 </template>
 
 <script setup>
+import { text } from '~/content/text'
 import TagList from './common/TagList.vue'
 import ArrowRightIcon from './icons/ArrowRightIcon.vue'
 import LinkIcon from './icons/LinkIcon.vue'

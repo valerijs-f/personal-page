@@ -1,13 +1,13 @@
 <template>
   <header
-    class="dark:bg-primary shadow-[0_4px_10px_theme(colors.accent/0.1)] sticky top-0 z-50 flex justify-between bg-white p-3 opacity-90"
+    class="bg-bg shadow-[0_4px_10px_theme(colors.accent/0.1)] sticky top-0 z-50 flex justify-between p-3 opacity-90"
   >
     <a class="flex flex-1 flex-row items-center" href="/">
       <LogoIcon />
     </a>
     <div class="flex flex-1 flex-row items-center justify-center gap-2">
       <a
-        class="hover:bg-light-elevated dark:hover:bg-elevated rounded-sm p-1"
+        class="hover:bg-bg-elevated rounded-sm p-1"
         href="https://github.com/valerijs-f"
         target="_blank"
         aria-label="GitHub profile"
@@ -15,7 +15,7 @@
         <GithubIcon />
       </a>
       <a
-        class="hover:bg-light-elevated dark:hover:bg-elevated rounded-sm p-1"
+        class="hover:bg-bg-elevated rounded-sm p-1"
         href="https://linkedin.com/in/valerijs-farbtuhs"
         target="_blank"
         aria-label="LinkedIn profile"
@@ -23,7 +23,7 @@
         <LinkedinIcon />
       </a>
       <a
-        class="hover:bg-light-elevated dark:hover:bg-elevated rounded-sm p-1"
+        class="hover:bg-bg-elevated rounded-sm p-1"
         href="mailto:val.codes.info+portfolio@gmail.com?subject=Portfolio%20Contact%20Request&body=Hi%20Valerijs%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ARegards%2C%0A"
         target="_blank"
         aria-label="Contact via email"
@@ -33,7 +33,7 @@
     </div>
     <div class="flex flex-1 flex-row items-center justify-end">
       <button
-        class="hover:bg-light-elevated dark:hover:bg-elevated cursor-pointer rounded-sm p-1"
+        class="hover:bg-bg-elevated cursor-pointer rounded-sm p-1"
         @click="toggleTheme"
         aria-label="Toggle theme"
       >

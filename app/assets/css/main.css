@@ -3,33 +3,52 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  /* Palette (referenced by semantic tokens) */
   --color-primary: #020420;
   --color-accent: #00dc42;
   --color-elevated: #1d293d;
   --color-light-elevated: #f2f2f2;
   --color-muted: #90a1b8;
 
+  /* Semantic tokens – light mode; overridden in .dark below */
+  --color-bg: #ffffff;
+  --color-bg-elevated: #f2f2f2;
+  --color-text: #171717;
+  --color-text-heading: #020420;
+  --color-text-muted: #525252;
+  --color-link-hover: #00dc42;
+
   --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Dark mode: switch semantic tokens only */
+.dark {
+  --color-bg: var(--color-primary);
+  --color-bg-elevated: var(--color-elevated);
+  --color-text: var(--color-muted);
+  --color-text-heading: #ffffff;
+  --color-text-muted: var(--color-muted);
+  --color-link-hover: color-mix(in srgb, var(--color-accent) 50%, transparent);
 }
 
 @layer base {
   body {
-    @apply dark:bg-primary dark:text-muted bg-white;
+    @apply bg-bg text-text;
   }
 
   h1 {
-    @apply mb-4 text-3xl font-bold dark:text-white;
+    @apply mb-4 text-3xl font-bold text-text-heading;
   }
 
   h2 {
-    @apply mb-3 text-2xl font-semibold dark:text-white;
+    @apply mb-3 text-2xl font-semibold text-text-heading;
   }
 
   h3 {
-    @apply mb-2 text-xl font-medium dark:text-white;
+    @apply mb-2 text-xl font-medium text-text-heading;
   }
 
   .link {
-    @apply hover:text-accent dark:hover:text-accent/50 group-hover:text-accent dark:group-hover:text-accent/50;
+    @apply hover:text-[var(--color-link-hover)] group-hover:text-[var(--color-link-hover)];
   }
 }

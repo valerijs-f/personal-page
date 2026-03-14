@@ -44,46 +44,28 @@
   </header>
 </template>
 
-<script>
+<script setup>
+import { ref, computed, onMounted } from 'vue'
 import { text } from '~/content/text'
-import EnvelopeIcon from '../icons/EnvelopeIcon.vue'
-import GithubIcon from '../icons/GithubIcon.vue'
-import LinkedinIcon from '../icons/LinkedinIcon.vue'
-import LogoIcon from '../icons/LogoIcon.vue'
-import MoonIcon from '../icons/MoonIcon.vue'
-import SunIcon from '../icons/SunIcon.vue'
-export default {
-  name: 'Header',
-  components: {
-    GithubIcon,
-    LinkedinIcon,
-    EnvelopeIcon,
-    LogoIcon,
-    MoonIcon,
-    SunIcon,
-  },
-  data() {
-    return {
-      colorMode: '',
-      text,
-    }
-  },
-  computed: {
-    isDarkTheme() {
-      return this.colorMode.value === 'dark'
-    },
-    isLightTheme() {
-      return this.colorMode.value === 'light'
-    },
-  },
-  mounted() {
-    const colorMode = useColorMode()
-    this.colorMode = colorMode
-  },
-  methods: {
-    toggleTheme() {
-      this.colorMode.preference = this.isDarkTheme ? 'light' : 'dark'
-    },
-  },
+import EnvelopeIcon from '~/components/icons/EnvelopeIcon.vue'
+import GithubIcon from '~/components/icons/GithubIcon.vue'
+import LinkedinIcon from '~/components/icons/LinkedinIcon.vue'
+import LogoIcon from '~/components/icons/LogoIcon.vue'
+import MoonIcon from '~/components/icons/MoonIcon.vue'
+import SunIcon from '~/components/icons/SunIcon.vue'
+
+const colorMode = ref(null)
+
+onMounted(() => {
+  colorMode.value = useColorMode()
+})
+
+const isDarkTheme = computed(() => colorMode.value?.value === 'dark')
+const isLightTheme = computed(() => colorMode.value?.value === 'light')
+
+function toggleTheme() {
+  if (colorMode.value) {
+    colorMode.value.preference = isDarkTheme.value ? 'light' : 'dark'
+  }
 }
 </script>

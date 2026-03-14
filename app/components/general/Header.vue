@@ -1,6 +1,6 @@
 <template>
   <header
-    class="dark:bg-primary shadow-[0_4px_10px_theme(colors.accent/0.1)] sticky top-0 flex justify-between bg-white p-3"
+    class="dark:bg-primary shadow-[0_4px_10px_theme(colors.accent/0.1)] sticky top-0 z-50 flex justify-between bg-white p-3 opacity-90"
   >
     <a class="flex flex-1 flex-row items-center" href="/">
       <LogoIcon />

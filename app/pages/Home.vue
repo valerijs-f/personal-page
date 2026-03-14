@@ -68,13 +68,13 @@
             <experience-card v-for="(project, i) in projects" :key="i" :experience="project">
               <template v-slot:left-column>
                 <div class="flex-basis-1/5">
-                  <div class="w-8 h-8 flex items-center justify-center">
-                    <component v-if="project.icon" :is="project.icon" class="w-8 h-8" />
+                  <div class="flex h-8 w-8 items-center justify-center">
+                    <component v-if="project.icon" :is="project.icon" class="h-8 w-8" />
                     <img
                       v-else-if="project.image"
                       :src="project.image"
                       :alt="`${project.role} logo`"
-                      class="w-8 h-8 rounded-sm"
+                      class="h-8 w-8 rounded-sm"
                     />
                   </div>
                 </div>

@@ -28,9 +28,14 @@
                 >recruitment</a
               >
               and
-              <a class="link font-bold underline" href="https://zorgselect.nl/" target="_blank">healtcare</a>
+              <a class="link font-bold underline" href="https://zorgselect.nl/" target="_blank"
+                >healtcare</a
+              >
               to
-              <a class="link font-bold underline" href="https://vrm.victronenergy.com/" target="_blank"
+              <a
+                class="link font-bold underline"
+                href="https://vrm.victronenergy.com/"
+                target="_blank"
                 >energy management</a
               >
               — each one teaching me something new about people, technology, and impact.
@@ -64,11 +69,7 @@
               <template v-slot:left-column>
                 <div class="flex-basis-1/5">
                   <div class="w-8 h-8 flex items-center justify-center">
-                    <component
-                      v-if="project.icon"
-                      :is="project.icon"
-                      class="w-8 h-8"
-                    />
+                    <component v-if="project.icon" :is="project.icon" class="w-8 h-8" />
                     <img
                       v-else-if="project.image"
                       :src="project.image"
@@ -128,7 +129,7 @@ const experiences = [
     companyUrl: 'https://www.utwente.nl/en/',
     location: 'Enschede, Netherlands',
     skills: ['Java', 'UML', 'OOP'],
-    description: `I supported students in developing strong programming and problem-solving skills through hands-on Java labs and personalized 
+    description: `I supported students in developing strong programming and problem-solving skills through hands-on Java labs and personalized
       guidance. I provided real-time debugging help, explained core object-oriented programming concepts, and gave
       detailed feedback on assignments to help students improve both their technical and analytical thinking.`,
   },
@@ -142,9 +143,9 @@ const projects = [
     repository: {
       link: 'https://github.com/valerijs-f/personal-page',
     },
-    description: `This very portfolio site is my first publicly available project, built to showcase my skills, experience, 
-       and personal approach to development. I implemented it from scratch, focusing on clean UI, 
-       accessibility, responsive layout, and a smooth user experience. It serves as both a practical demonstration 
+    description: `This very portfolio site is my first publicly available project, built to showcase my skills, experience,
+       and personal approach to development. I implemented it from scratch, focusing on clean UI,
+       accessibility, responsive layout, and a smooth user experience. It serves as both a practical demonstration
        of my abilities and a foundation I plan to expand as I grow professionally.`,
   },
   {
@@ -156,8 +157,8 @@ const projects = [
     repository: {
       link: 'https://github.com/valerijs-f/expense-tracker',
     },
-    description: `A personal Telegram Mini App created to simplify everyday expense tracking for me and my girlfriend. 
-      It replaces a manual Google Sheets workflow we had been using for years, making it faster and easier to log expenses in daily life. 
+    description: `A personal Telegram Mini App created to simplify everyday expense tracking for me and my girlfriend.
+      It replaces a manual Google Sheets workflow we had been using for years, making it faster and easier to log expenses in daily life.
       The project is built around convenience and consistency, turning a repetitive task into a lightweight, habit-friendly process.`,
   },
 ]

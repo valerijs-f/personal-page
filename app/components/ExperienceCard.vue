@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-bg-elevated group flex flex-col gap-4 rounded-sm p-4 transition-shadow lg:flex-row lg:hover:shadow-[0_25px_50px_-12px_color-mix(in_srgb,var(--color-accent)_22%,transparent)]"
+    class="bg-bg-elevated group border-accent/50 flex flex-col gap-4 rounded-sm border-t-3 p-4 transition-shadow lg:flex-row lg:hover:shadow-[0_25px_50px_-12px_color-mix(in_srgb,var(--color-accent)_22%,transparent)]"
   >
     <slot name="left-column"></slot>
     <div class="flex flex-col gap-2">

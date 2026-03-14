@@ -4,7 +4,7 @@
       <div class="flex flex-col gap-4 lg:w-4/5">
         <div class="text-center">
           <h1 class="mb-2">Valerijs Farbtuhs</h1>
-          <p class="mb-1 text-xl text-text-heading">Medior Full Stack developer</p>
+          <p class="text-text-heading mb-1 text-xl">Medior Full Stack developer</p>
           <p class="text-lg">I build responsive, scalable and accessible applications.</p>
         </div>
         <div>

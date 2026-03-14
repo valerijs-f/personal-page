@@ -32,13 +32,6 @@
       target="_blank"
       aria-label="Link to Netlify"
       >Netlify</a
-    >. Inspired by Leonids Maslovs’
-    <a
-      class="link font-bold"
-      href="https://leonidsmaslovs.com/"
-      target="_blank"
-      aria-label="Link to Leonids Maslovs’ portfolio site"
-      >portfolio website</a
     >.
   </footer>
 </template>

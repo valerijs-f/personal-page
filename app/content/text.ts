@@ -64,6 +64,17 @@ export const text = {
     ],
     projectsList: [
       {
+        role: 'Local-first shared lists',
+        company: 'Common Lists',
+        companyUrl: 'https://common-list.valerijs.dev/',
+        skills: ['Vue', 'Tailwind', 'Jazz Cloud', 'Vercel'],
+        icon: 'CommonListIcon',
+        repository: {
+          link: 'https://github.com/valerijs-f/common-list',
+        },
+        description: `A collaborative list app where changes ripple across tabs and devices in real time, yet works offline usable when the network drops. Features include passkey sign-in, shareable URLs, and drag-and-drop ordering on top of Jazz’s synced CoValues. The app is inspired by the presentation of Alexander Opalic at Vue.js Amsterdam 2026.`,
+      },
+      {
         role: 'Portfolio Site',
         skills: ['Nuxt.js', 'Vue', 'Tailwind'],
         icon: 'LogoMinimalIcon',

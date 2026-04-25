@@ -1,5 +1,7 @@
 import tailwindcss from '@tailwindcss/vite'
 
+const googleFontsHref = 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: process.env.NUXT_DEVTOOLS_ENABLED === 'true' },
@@ -26,8 +28,24 @@ export default defineNuxtConfig({
       ],
       link: [
         {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com',
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: '',
+        },
+        {
+          rel: 'preload',
+          as: 'style',
+          href: googleFontsHref,
+        },
+        {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700',
+          href: googleFontsHref,
+          media: 'print',
+          onload: "this.media='all'",
         },
       ],
     },

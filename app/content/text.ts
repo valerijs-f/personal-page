@@ -103,6 +103,7 @@ export const text = {
     ],
   },
   header: {
+    ariaHome: 'Go to homepage',
     ariaGitHub: 'GitHub profile',
     ariaLinkedIn: 'LinkedIn profile',
     ariaEmail: 'Contact via email',

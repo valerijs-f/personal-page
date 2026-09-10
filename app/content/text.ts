@@ -7,7 +7,7 @@ export type AboutSegment = string | { link: true; href: string; text: string }
 export const text = {
   home: {
     name: 'Valerijs Farbtuhs',
-    tagline: 'Medior Full Stack developer',
+    tagline: 'Full Stack Engineer',
     subtitle: 'I build responsive, scalable and accessible applications.',
     about: {
       title: 'About me',
@@ -15,9 +15,9 @@ export const text = {
         "I discovered my passion for creating things through code when I took Harvard's CS50 course — a general introduction to computer science where I built my very first web app as a final project. That moment of turning an idea into something real, something interactive, instantly hooked me. Since then, I've been fascinated by how web development blends logic and creativity to shape experiences that people actually use.",
       paragraph2Parts: [
         'During my university years, I dove deeper into programming, constantly learning and experimenting to bring my ideas to life. After graduating, I was lucky to turn this passion into a career, applying my skills across diverse projects and domains — from ',
-        { link: true, href: 'https://www.thuisbezorgd.nl/en/courier', text: 'recruitment' },
+        { link: true, href: 'https://www.booking.com/', text: 'travelling' },
         ' and ',
-        { link: true, href: 'https://zorgselect.nl/', text: 'healtcare' },
+        { link: true, href: 'https://www.thuisbezorgd.nl/en/courier', text: 'recruitment' },
         ' to ',
         { link: true, href: 'https://vrm.victronenergy.com/', text: 'energy management' },
         ' — each one teaching me something new about people, technology, and impact.',
@@ -33,8 +33,17 @@ export const text = {
     },
     experiences: [
       {
-        period: '2023 - present',
-        role: 'Fullstack Developer',
+        period: '2026 - present',
+        role: 'Full Stack Engineer',
+        company: 'Booking.com',
+        companyUrl: 'https://www.booking.com/',
+        location: 'Amsterdam, Netherlands',
+        skills: ['Vue','Perl','Java'],
+        description: `I contribute to building and maintaining partner-facing platforms at Booking.com, working across frontend and backend systems at a global scale. I collaborate with engineers, designers, and product teams to deliver reliable, accessible, and user-focused experiences while continuously learning and growing as a software engineer.`,
+      },
+      {
+        period: '2023 - 2026',
+        role: 'Full Stack Developer',
         company: 'El Niño',
         companyUrl: 'https://elnino.tech/',
         location: 'Enschede, Netherlands',

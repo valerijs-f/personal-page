@@ -1,6 +1,7 @@
 import tailwindcss from '@tailwindcss/vite'
 
-const googleFontsHref = 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'
+const googleFontsHref =
+  'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',

@@ -38,7 +38,7 @@ export const text = {
         company: 'Booking.com',
         companyUrl: 'https://www.booking.com/',
         location: 'Amsterdam, Netherlands',
-        skills: ['Vue','Perl','Java'],
+        skills: ['Vue', 'Perl', 'Java'],
         description: `I contribute to building and maintaining partner-facing platforms at Booking.com, working across frontend and backend systems at a global scale. I collaborate with engineers, designers, and product teams to deliver reliable, accessible, and user-focused experiences while continuously learning and growing as a software engineer.`,
       },
       {

@@ -2,9 +2,11 @@
   <header
     class="bg-bg shadow-[0_4px_10px_theme(colors.accent/0.1)] sticky top-0 z-50 flex justify-between p-3 opacity-90"
   >
-    <a class="flex flex-1 flex-row items-center" href="/" :aria-label="text.header.ariaHome">
-      <LogoIcon />
-    </a>
+    <div class="flex flex-1 flex-row items-center">
+      <a href="/" :aria-label="text.header.ariaHome">
+        <LogoIcon />
+      </a>
+    </div>
     <div class="flex flex-1 flex-row items-center justify-center gap-2">
       <a
         class="hover:bg-bg-elevated rounded-sm p-1"

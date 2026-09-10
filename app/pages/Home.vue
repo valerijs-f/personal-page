@@ -71,7 +71,7 @@
 
 <script setup>
 import CommonListIcon from '~/components/icons/CommonListIcon.vue'
-import LogoMinimalIcon from '~/components/icons/LogoMinimalIcon.vue'
+import LogoIcon from '~/components/icons/LogoIcon.vue'
 import ExperienceCard from '~/components/ExperienceCard.vue'
 import TrackerImage from '~/assets/img/tracker-logo.png'
 import { text } from '~/content/text'
@@ -83,7 +83,7 @@ definePageMeta({
 
 const experiences = text.home.experiences
 
-const iconByKey = { CommonListIcon, LogoMinimalIcon }
+const iconByKey = { CommonListIcon, LogoIcon }
 const imageByKey = { 'tracker-logo': TrackerImage }
 
 const projects = text.home.projectsList.map((p) => ({

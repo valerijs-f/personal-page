@@ -86,7 +86,7 @@ export const text = {
       {
         role: 'Portfolio Site',
         skills: ['Nuxt.js', 'Vue', 'Tailwind'],
-        icon: 'LogoMinimalIcon',
+        icon: 'LogoIcon',
         repository: {
           link: 'https://github.com/valerijs-f/personal-page',
         },

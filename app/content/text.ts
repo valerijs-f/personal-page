@@ -7,7 +7,7 @@ export type AboutSegment = string | { link: true; href: string; text: string }
 export const text = {
   home: {
     name: 'Valerijs Farbtuhs',
-    tagline: 'Full Stack Engineer',
+    tagline: 'Full Stack Software Engineer',
     subtitle: 'I build responsive, scalable and accessible applications.',
     about: {
       title: 'About me',
@@ -34,7 +34,7 @@ export const text = {
     experiences: [
       {
         period: '2026 - present',
-        role: 'Full Stack Engineer',
+        role: 'Full Stack Software Engineer',
         company: 'Booking.com',
         companyUrl: 'https://www.booking.com/',
         location: 'Amsterdam, Netherlands',

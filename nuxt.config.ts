@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Portfolio of Valerijs Farbtuhs, a medior full stack developer building responsive, scalable, and accessible web applications.',
+            'Portfolio of Valerijs Farbtuhs, a full stack software engineer building responsive, scalable, and accessible web applications.',
         },
       ],
       link: [
